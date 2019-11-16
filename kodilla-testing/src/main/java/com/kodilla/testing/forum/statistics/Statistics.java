@@ -1,4 +1,9 @@
 package com.kodilla.testing.forum.statistics;
 
-public class Statistics {
+import java.util.List;
+
+public interface Statistics {
+    List<String> usersNames();
+    int postsCount();
+    int commentsCount();
 }
