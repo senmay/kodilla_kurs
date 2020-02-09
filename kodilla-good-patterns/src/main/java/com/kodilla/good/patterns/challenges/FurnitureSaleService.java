@@ -6,8 +6,8 @@ public class FurnitureSaleService implements SalesService {
 
     @Override
     public boolean sale(User user, LocalDate dateOfSale, Product product) {
-        System.out.println("Sprzedaż " + product.getNameOfProduct() + " w dniu " + dateOfSale.toString()
-                + ", kupujący: " + user.getFirstName());
+        System.out.println("Selling " + product.getNameOfProduct() + " in " + dateOfSale.toString()
+                + ", Buyer: " + user.getFirstName());
         return true;
     }
 }
