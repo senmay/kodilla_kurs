@@ -14,7 +14,7 @@ public class DeliveryProcessor {
             } else {
                 System.out.println("Delivery order rejected.");
             }
-        } catch (Exception e) {
+        } catch (NoFoodSupplierException e) {
             System.out.println("Supplier not found.");
         }
     }

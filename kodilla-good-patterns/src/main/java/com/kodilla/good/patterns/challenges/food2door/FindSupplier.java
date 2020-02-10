@@ -1,7 +1,7 @@
 package com.kodilla.good.patterns.challenges.food2door;
 
 public class FindSupplier {
-    static FoodSupplier find(String name) throws Exception {
+    static FoodSupplier find(String name) throws NoFoodSupplierException  {
 
         switch (name.toLowerCase()) {
             case "extra food shop":
@@ -11,6 +11,6 @@ public class FindSupplier {
             case "gluten free shop":
                 return new GlutenFreeShop();
         }
-        throw new Exception();
+        throw new NoFoodSupplierException ();
     }
 }
