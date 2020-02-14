@@ -30,7 +30,7 @@ public final class FlightFinder {
         System.out.println("To " + flightTo + " you can fly from <- " + findAllFlightsTo(flightTo));
     }
 
-    public void findFlightWithChange(FlightStations flightFrom, FlightStations flightTo) {
+    public List<FlightStations> findFlightWithChange(FlightStations flightFrom, FlightStations flightTo) {
         List<FlightStations> flightsFromCity = findAllFlightsFrom(flightFrom);
         List<FlightStations> flightsToCity = findAllFlightsTo(flightTo);
 
@@ -42,7 +42,10 @@ public final class FlightFinder {
                 list.add(fly);
             }
         }
+        return list;
+    }
 
-        System.out.println(flightFrom + "->" + "You can fly by" + list + "-> " + flightTo);
+    public void findFlightWithChangeToPrint(FlightStations flightFrom, FlightStations flightTo) {
+        System.out.println(findFlightWithChange(flightFrom, flightTo));
     }
 }

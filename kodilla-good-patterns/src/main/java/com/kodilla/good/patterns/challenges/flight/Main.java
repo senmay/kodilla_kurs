@@ -6,7 +6,7 @@ public class Main {
         FlightFinder flightFinder=new FlightFinder();
         flightFinder.findAllFlightsFromPrint(FlightStations.WARSZAWA);
         flightFinder.findAllFlightsToPrint(FlightStations.LUBLIN);
-        flightFinder.findFlightWithChange(FlightStations.KRAKOW, FlightStations.WARSZAWA);
+        flightFinder.findFlightWithChangeToPrint(FlightStations.KRAKOW, FlightStations.WARSZAWA);
 
     }
 }
