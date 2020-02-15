@@ -2,10 +2,12 @@ package com.kodilla.spring.calculator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 @Component
 
 public class Calculator {
+    @Autowired
 
     private Display display;
 

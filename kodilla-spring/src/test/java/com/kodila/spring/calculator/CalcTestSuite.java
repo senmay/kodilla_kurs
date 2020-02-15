@@ -1,6 +1,7 @@
 package com.kodila.spring.calculator;
 
 import com.kodilla.spring.calculator.Calculator;
+import com.kodilla.spring.calculator.Display;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 
-@SpringBootTest (classes = Calculator.class)
+@SpringBootTest (classes = {Calculator.class, Display.class})
 public class CalcTestSuite {
     @Test
     public void testCalculations() {
