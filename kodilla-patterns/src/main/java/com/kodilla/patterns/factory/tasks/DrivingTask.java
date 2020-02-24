@@ -2,12 +2,12 @@ package com.kodilla.patterns.factory.tasks;
 
 public class DrivingTask implements Task{
 
-    String taskName;
+    TaskClass taskName;
     String where;
     String using;
     boolean isTaskDone;
 
-    public DrivingTask(String taskName, String where, String using) {
+    public DrivingTask(TaskClass taskName, String where, String using) {
         this.taskName = taskName;
         this.where = where;
         this.using = using;
@@ -20,7 +20,7 @@ public class DrivingTask implements Task{
     }
 
     @Override
-    public String getTaskName() {
+    public TaskClass getTaskName() {
         return taskName;
     }
 
