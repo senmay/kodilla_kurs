@@ -8,4 +8,5 @@ findProject(':kodilla-exception')?.name = 'kodilla-kurs'
 include 'kodila-spring-intro'
 include 'kodilla-spring'
 include 'kodilla-patterns'
+include 'kodilla-jdbc'
 
