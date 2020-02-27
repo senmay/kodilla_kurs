@@ -1,4 +1,4 @@
-package com.kodilla.spring;
+/*package com.kodilla.spring;
 
 import com.kodilla.spring.forum.ForumUser;
 import com.kodilla.spring.shape.Shape;
@@ -62,4 +62,4 @@ public class SpringRunnerTestSuite {
         //Then
         System.out.println("Chosen shape says: " + name);
     }
-}
+}*/
