@@ -44,6 +44,9 @@ public class InvoiceDaoTestSuite {
         invoice1.setItems(Arrays.asList(item1, item2, item3));
 
         //when
+        itemDao.save(item1);
+        itemDao.save(item2);
+        itemDao.save(item3);
         invoiceDao.save(invoice1);
         int invoice1Id = invoice1.getId();
 

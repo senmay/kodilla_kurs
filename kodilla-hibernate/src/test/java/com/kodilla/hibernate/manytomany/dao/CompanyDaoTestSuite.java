@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@SpringBootApplication
 public class CompanyDaoTestSuite {
     @Autowired
     CompanyDao companyDao;
@@ -22,6 +24,7 @@ public class CompanyDaoTestSuite {
     @Test
     public void testSaveManyToMany() {
         //Given
+
         Employee johnSmith = new Employee("John", "Smith");
         Employee stephanieClarkson = new Employee("Stephanie", "Clarckson");
         Employee lindaKowalski = new Employee("Linda", "Kovalsky");
