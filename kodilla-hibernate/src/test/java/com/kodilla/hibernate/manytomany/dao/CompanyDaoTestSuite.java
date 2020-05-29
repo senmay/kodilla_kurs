@@ -14,7 +14,6 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@SpringBootApplication
 public class CompanyDaoTestSuite {
     @Autowired
     CompanyDao companyDao;

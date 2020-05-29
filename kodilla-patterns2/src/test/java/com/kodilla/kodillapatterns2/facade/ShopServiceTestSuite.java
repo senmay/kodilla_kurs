@@ -1,9 +1,9 @@
-package facade;
+package com.kodilla.kodillapatterns2.facade;
 
-import facade.api.ItemDto;
-import facade.api.OrderDto;
-import facade.api.OrderFacade;
-import facade.api.OrderProcessingException;
+import com.kodilla.kodillapatterns2.facade.api.ItemDto;
+import com.kodilla.kodillapatterns2.facade.api.OrderDto;
+import com.kodilla.kodillapatterns2.facade.api.OrderFacade;
+import com.kodilla.kodillapatterns2.facade.api.OrderProcessingException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package facade.api;
+package com.kodilla.kodillapatterns2.facade.api;
 
 import java.util.ArrayList;
 import java.util.List;

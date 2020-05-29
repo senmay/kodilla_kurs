@@ -1,4 +1,4 @@
-package facade.api;
+package com.kodilla.kodillapatterns2.facade.api;
 
 public class ItemDto {
     private final Long productId;
