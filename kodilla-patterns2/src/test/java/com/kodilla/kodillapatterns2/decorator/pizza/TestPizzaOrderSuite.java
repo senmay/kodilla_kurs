@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TestPizzaOrderSuite {
 
-
     @Test
     public void testCostOfBasicPizzaOrder() {
         //Given
