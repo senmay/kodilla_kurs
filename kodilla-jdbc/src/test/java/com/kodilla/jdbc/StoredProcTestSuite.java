@@ -35,9 +35,10 @@ public class StoredProcTestSuite {
     public void testUpdateBestsellers() throws SQLException {
         //Given
         DbManager dbManager = DbManager.getInstance();
-        String sqlUpdate = "UPDATE books SET bestseller=null";
+        String sqlInsert = "INSERT INTO BOOKS (TITLE, PUBYEAR, BESTSELLER) VALUES ('solzenicyn', 1917, null)";
+        //String sqlUpdate = "UPDATE books SET bestseller=null";
         Statement statement = dbManager.getConnection().createStatement();
-        statement.executeUpdate(sqlUpdate);
+        statement.executeUpdate(sqlInsert);
 
         //When
         String sqlProcedureCall = "CALL UpdateBestsellers()";
@@ -51,5 +52,7 @@ public class StoredProcTestSuite {
             howMany = rs.getInt("how_many");
         }
         assertEquals(0, howMany);
+
+        statement.executeUpdate("DELETE FROM BOOKS WHERE TITLE = 'solzenicyn'");
     }
 }
