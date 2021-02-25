@@ -6,7 +6,7 @@ Core Java:
 - Exceptions handling
 - Lambda expression
 - Stream
-- 
+-  
 Design patterns:
 
 - Adapter
@@ -18,7 +18,7 @@ Design patterns:
 - Prototype
 - Singleton
 - Strategy
-- 
+
 Testing:
 
 - Unit tests (JUnit, Mockito)
@@ -35,7 +35,7 @@ Hibernate:
 - Entities
 - Entity relationship
 - HQL, Named Queries
-- 
+
 Design principles:
 
 - SOLID
