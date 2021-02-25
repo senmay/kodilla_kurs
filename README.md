@@ -6,7 +6,7 @@ Core Java:
 - Exceptions handling
 - Lambda expression
 - Stream
--  
+  
 Design patterns:
 
 - Adapter
@@ -29,7 +29,7 @@ Spring:
 - Beans
 - Components
 - Dependency Injection
-- 
+
 Hibernate:
 
 - Entities
